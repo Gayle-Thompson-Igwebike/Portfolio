@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Portfolio</title>
+</head>
+
+<body>
+    <!-- Mobile Version -->
+    <div class="header">
+        <div class="top-circle"></div>
+
+        <div class="name">
+            <p>Gayle Thompson-Igwebike</p>
+            <div class="role">
+                <p>Software Engineer</p>
+            </div>
+        </div>
+       
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu">
+            <div class="nav-bars">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!-- <a href="#home" class="active">Home</a> -->
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#resume">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="about-me">
+        <h1 id="hello"> Hello </h1>
+        <h2>A bit about me...</h2>
+        <p>A Fullstack Software Engineer with expertise in front-end and back-end development. Using HTML, CSS, JavaScript, PERN stack and GitHub as version control, I have experience
+            working in a dynamic and fast-paced project environment, with effective communication skills, team collaboration and coordination of project delivery. </p>
+
+
+    </div>
+
+    <div class="circle-container">
+        <!-- Resume Circle -->
+        <a href="resume.html" class="circle resume">
+            <p>Resume</p>
+        </a>
+        <!-- Projects Circle -->
+        <a href="projects.html" class="circle projects">
+            <p>Projects</p>
+        </a>
+        <!-- Contact Circle -->
+        <a href="contact.html" class="circle contact">
+            <p>Contact</p>
+        </a>
+    </div>
+
+    <div class="profile-circle">
+        <!-- Your Profile Image -->
+        <img src="images/headshot.jpg" alt="image">
+    </div>
+<br><br>
+    <hr>
+    <footer>
+        <p>Connect with me on: <a href="https://www.linkedin.com/in/gayle-thompson-igwebike/">linkedin  </a></p>
+        <p>My repositories: <a href="https://github.com/Gayle-Thompson-Igwebike?tab=repositories">GitHub</a></p>
+
+
+        <div class="footer-icons">
+            <p>&copy Gayle-Thompson-Igwebike - Software Developer: 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
