@@ -190,6 +190,12 @@ footer {
     
 }
 
+.skills{
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    text-align: justify;
+}
 
 /* Media Query for Desktop */
 @media (min-width: 768px) {
